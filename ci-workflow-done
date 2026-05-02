@@ -1,0 +1,335 @@
+Run Summary
+
+✓ main CI Build · 25249088449
+Triggered via push less than a minute ago
+
+JOBS
+✓ build in 18s (ID 74038236604)
+
+ANNOTATIONS
+! Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build: .github#2
+
+
+For more information about the job, try: gh run view --job=74038236604
+View this run on GitHub: https://github.com/Yousefeslam214/devops-capstone-project/actions/runs/25249088449
+
+Full Logs
+build	Set up job	﻿2026-05-02T09:39:52.4220888Z Current runner version: '2.334.0'
+build	Set up job	2026-05-02T09:39:52.4247766Z ##[group]Runner Image Provisioner
+build	Set up job	2026-05-02T09:39:52.4248563Z Hosted Compute Agent
+build	Set up job	2026-05-02T09:39:52.4249052Z Version: 20260213.493
+build	Set up job	2026-05-02T09:39:52.4249746Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+build	Set up job	2026-05-02T09:39:52.4250442Z Build Date: 2026-02-13T00:28:41Z
+build	Set up job	2026-05-02T09:39:52.4251073Z Worker ID: {65249230-5f11-4cd2-bd5b-1167a55ea655}
+build	Set up job	2026-05-02T09:39:52.4252327Z Azure Region: northcentralus
+build	Set up job	2026-05-02T09:39:52.4252904Z ##[endgroup]
+build	Set up job	2026-05-02T09:39:52.4254398Z ##[group]Operating System
+build	Set up job	2026-05-02T09:39:52.4255075Z Ubuntu
+build	Set up job	2026-05-02T09:39:52.4255607Z 24.04.4
+build	Set up job	2026-05-02T09:39:52.4256022Z LTS
+build	Set up job	2026-05-02T09:39:52.4256813Z ##[endgroup]
+build	Set up job	2026-05-02T09:39:52.4257293Z ##[group]Runner Image
+build	Set up job	2026-05-02T09:39:52.4257845Z Image: ubuntu-24.04
+build	Set up job	2026-05-02T09:39:52.4258397Z Version: 20260413.86.1
+build	Set up job	2026-05-02T09:39:52.4259351Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-05-02T09:39:52.4261012Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+build	Set up job	2026-05-02T09:39:52.4261900Z ##[endgroup]
+build	Set up job	2026-05-02T09:39:52.4263027Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-05-02T09:39:52.4265101Z Contents: read
+build	Set up job	2026-05-02T09:39:52.4265673Z Metadata: read
+build	Set up job	2026-05-02T09:39:52.4266737Z Packages: read
+build	Set up job	2026-05-02T09:39:52.4267335Z ##[endgroup]
+build	Set up job	2026-05-02T09:39:52.4269389Z Secret source: Actions
+build	Set up job	2026-05-02T09:39:52.4270533Z Prepare workflow directory
+build	Set up job	2026-05-02T09:39:52.4611183Z Prepare all required actions
+build	Set up job	2026-05-02T09:39:52.4649350Z Getting action download info
+build	Set up job	2026-05-02T09:39:52.8480111Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	Set up job	2026-05-02T09:39:52.9638544Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build	Set up job	2026-05-02T09:39:53.1464124Z Complete job name: build
+build	Checkout code	﻿2026-05-02T09:39:53.2219022Z ##[group]Run actions/checkout@v4
+build	Checkout code	2026-05-02T09:39:53.2219961Z with:
+build	Checkout code	2026-05-02T09:39:53.2220536Z   repository: Yousefeslam214/devops-capstone-project
+build	Checkout code	2026-05-02T09:39:53.2221367Z   token: ***
+build	Checkout code	2026-05-02T09:39:53.2221799Z   ssh-strict: true
+build	Checkout code	2026-05-02T09:39:53.2222259Z   ssh-user: git
+build	Checkout code	2026-05-02T09:39:53.2222711Z   persist-credentials: true
+build	Checkout code	2026-05-02T09:39:53.2223198Z   clean: true
+build	Checkout code	2026-05-02T09:39:53.2223661Z   sparse-checkout-cone-mode: true
+build	Checkout code	2026-05-02T09:39:53.2224211Z   fetch-depth: 1
+build	Checkout code	2026-05-02T09:39:53.2224655Z   fetch-tags: false
+build	Checkout code	2026-05-02T09:39:53.2225120Z   show-progress: true
+build	Checkout code	2026-05-02T09:39:53.2225585Z   lfs: false
+build	Checkout code	2026-05-02T09:39:53.2225997Z   submodules: false
+build	Checkout code	2026-05-02T09:39:53.2226661Z   set-safe-directory: true
+build	Checkout code	2026-05-02T09:39:53.2227431Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.3317492Z Syncing repository: Yousefeslam214/devops-capstone-project
+build	Checkout code	2026-05-02T09:39:53.3319518Z ##[group]Getting Git version info
+build	Checkout code	2026-05-02T09:39:53.3320546Z Working directory is '/home/runner/work/devops-capstone-project/devops-capstone-project'
+build	Checkout code	2026-05-02T09:39:53.3321954Z [command]/usr/bin/git version
+build	Checkout code	2026-05-02T09:39:53.3359495Z git version 2.53.0
+build	Checkout code	2026-05-02T09:39:53.3385543Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.3406804Z Temporarily overriding HOME='/home/runner/work/_temp/80a9a84f-d962-48dc-b7e6-3926ee6cb188' before making global git config changes
+build	Checkout code	2026-05-02T09:39:53.3408370Z Adding repository directory to the temporary git global config as a safe directory
+build	Checkout code	2026-05-02T09:39:53.3412276Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-capstone-project/devops-capstone-project
+build	Checkout code	2026-05-02T09:39:53.3442412Z Deleting the contents of '/home/runner/work/devops-capstone-project/devops-capstone-project'
+build	Checkout code	2026-05-02T09:39:53.3445855Z ##[group]Initializing the repository
+build	Checkout code	2026-05-02T09:39:53.3450527Z [command]/usr/bin/git init /home/runner/work/devops-capstone-project/devops-capstone-project
+build	Checkout code	2026-05-02T09:39:53.3535910Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Checkout code	2026-05-02T09:39:53.3538002Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Checkout code	2026-05-02T09:39:53.3539398Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Checkout code	2026-05-02T09:39:53.3540282Z hint: call:
+build	Checkout code	2026-05-02T09:39:53.3540768Z hint:
+build	Checkout code	2026-05-02T09:39:53.3541554Z hint: 	git config --global init.defaultBranch <name>
+build	Checkout code	2026-05-02T09:39:53.3542327Z hint:
+build	Checkout code	2026-05-02T09:39:53.3543047Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Checkout code	2026-05-02T09:39:53.3544104Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Checkout code	2026-05-02T09:39:53.3544926Z hint:
+build	Checkout code	2026-05-02T09:39:53.3545428Z hint: 	git branch -m <name>
+build	Checkout code	2026-05-02T09:39:53.3545986Z hint:
+build	Checkout code	2026-05-02T09:39:53.3547103Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Checkout code	2026-05-02T09:39:53.3548781Z Initialized empty Git repository in /home/runner/work/devops-capstone-project/devops-capstone-project/.git/
+build	Checkout code	2026-05-02T09:39:53.3550938Z [command]/usr/bin/git remote add origin https://github.com/Yousefeslam214/devops-capstone-project
+build	Checkout code	2026-05-02T09:39:53.3577914Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.3578776Z ##[group]Disabling automatic garbage collection
+build	Checkout code	2026-05-02T09:39:53.3581933Z [command]/usr/bin/git config --local gc.auto 0
+build	Checkout code	2026-05-02T09:39:53.3609385Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.3610150Z ##[group]Setting up auth
+build	Checkout code	2026-05-02T09:39:53.3615926Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Checkout code	2026-05-02T09:39:53.3645030Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Checkout code	2026-05-02T09:39:53.3928163Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Checkout code	2026-05-02T09:39:53.3961884Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Checkout code	2026-05-02T09:39:53.4185753Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Checkout code	2026-05-02T09:39:53.4217916Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Checkout code	2026-05-02T09:39:53.4464686Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Checkout code	2026-05-02T09:39:53.4503424Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.4515241Z ##[group]Fetching the repository
+build	Checkout code	2026-05-02T09:39:53.4517030Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2dc40630854454aa3ed33bff6b409141e2f309c7:refs/remotes/origin/main
+build	Checkout code	2026-05-02T09:39:53.8764131Z From https://github.com/Yousefeslam214/devops-capstone-project
+build	Checkout code	2026-05-02T09:39:53.8765576Z  * [new ref]         2dc40630854454aa3ed33bff6b409141e2f309c7 -> origin/main
+build	Checkout code	2026-05-02T09:39:53.8793620Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.8795557Z ##[group]Determining the checkout info
+build	Checkout code	2026-05-02T09:39:53.8798131Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.8802068Z [command]/usr/bin/git sparse-checkout disable
+build	Checkout code	2026-05-02T09:39:53.8840589Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Checkout code	2026-05-02T09:39:53.8868101Z ##[group]Checking out the ref
+build	Checkout code	2026-05-02T09:39:53.8872351Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Checkout code	2026-05-02T09:39:53.9004177Z Switched to a new branch 'main'
+build	Checkout code	2026-05-02T09:39:53.9005897Z branch 'main' set up to track 'origin/main'.
+build	Checkout code	2026-05-02T09:39:53.9012882Z ##[endgroup]
+build	Checkout code	2026-05-02T09:39:53.9050291Z [command]/usr/bin/git log -1 --format=%H
+build	Checkout code	2026-05-02T09:39:53.9073778Z 2dc40630854454aa3ed33bff6b409141e2f309c7
+build	Set up Python	﻿2026-05-02T09:39:53.9402859Z ##[group]Run actions/setup-python@v5
+build	Set up Python	2026-05-02T09:39:53.9404061Z with:
+build	Set up Python	2026-05-02T09:39:53.9404861Z   python-version: 3.9
+build	Set up Python	2026-05-02T09:39:53.9405779Z   check-latest: false
+build	Set up Python	2026-05-02T09:39:53.9407281Z   token: ***
+build	Set up Python	2026-05-02T09:39:53.9408154Z   update-environment: true
+build	Set up Python	2026-05-02T09:39:53.9409482Z   allow-prereleases: false
+build	Set up Python	2026-05-02T09:39:53.9410488Z   freethreaded: false
+build	Set up Python	2026-05-02T09:39:53.9411390Z ##[endgroup]
+build	Set up Python	2026-05-02T09:39:54.1154609Z ##[group]Installed versions
+build	Set up Python	2026-05-02T09:39:54.1259924Z Version 3.9 was not found in the local cache
+build	Set up Python	2026-05-02T09:39:54.6954738Z Version 3.9 is available for downloading
+build	Set up Python	2026-05-02T09:39:54.6958337Z Download from "https://github.com/actions/python-versions/releases/download/3.9.25-19039189640/python-3.9.25-linux-24.04-x64.tar.gz"
+build	Set up Python	2026-05-02T09:39:55.3842291Z Extract downloaded archive
+build	Set up Python	2026-05-02T09:39:55.3951843Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/effadeba-3bf5-434b-a5d1-dcb22d377bae -f /home/runner/work/_temp/e5bf312a-2592-4550-9b4a-2cc610e4eb02
+build	Set up Python	2026-05-02T09:39:56.7857470Z Execute installation script
+build	Set up Python	2026-05-02T09:39:56.7945578Z Check if Python hostedtoolcache folder exist...
+build	Set up Python	2026-05-02T09:39:56.7946836Z Create Python 3.9.25 folder
+build	Set up Python	2026-05-02T09:39:56.7962091Z Copy Python binaries to hostedtoolcache folder
+build	Set up Python	2026-05-02T09:39:57.2444991Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+build	Set up Python	2026-05-02T09:39:57.2484392Z Upgrading pip...
+build	Set up Python	2026-05-02T09:39:59.4162395Z Looking in links: /tmp/tmps9u176e2
+build	Set up Python	2026-05-02T09:39:59.4166997Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (79.0.1)
+build	Set up Python	2026-05-02T09:39:59.4172073Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (23.0.1)
+build	Set up Python	2026-05-02T09:40:00.5973212Z Collecting pip
+build	Set up Python	2026-05-02T09:40:00.6311590Z Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+build	Set up Python	2026-05-02T09:40:00.6809286Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 38.0 MB/s eta 0:00:00
+build	Set up Python	2026-05-02T09:40:00.6810437Z 
+build	Set up Python	2026-05-02T09:40:00.7417636Z Installing collected packages: pip
+build	Set up Python	2026-05-02T09:40:00.7420368Z Attempting uninstall: pip
+build	Set up Python	2026-05-02T09:40:00.7427175Z Found existing installation: pip 23.0.1
+build	Set up Python	2026-05-02T09:40:00.9199824Z Uninstalling pip-23.0.1:
+build	Set up Python	2026-05-02T09:40:00.9274047Z Successfully uninstalled pip-23.0.1
+build	Set up Python	2026-05-02T09:40:01.7477827Z Successfully installed pip-26.0.1
+build	Set up Python	2026-05-02T09:40:01.8033683Z Create complete file
+build	Set up Python	2026-05-02T09:40:01.8081567Z Successfully set up CPython (3.9.25)
+build	Set up Python	2026-05-02T09:40:01.8082475Z ##[endgroup]
+build	Install dependencies	﻿2026-05-02T09:40:01.8232029Z ##[group]Run python -m pip install --upgrade pip wheel
+build	Install dependencies	2026-05-02T09:40:01.8232498Z [36;1mpython -m pip install --upgrade pip wheel[0m
+build	Install dependencies	2026-05-02T09:40:01.8232823Z [36;1mif [ -f requirements.txt ]; then[0m
+build	Install dependencies	2026-05-02T09:40:01.8233120Z [36;1m  pip install -r requirements.txt[0m
+build	Install dependencies	2026-05-02T09:40:01.8233370Z [36;1mfi[0m
+build	Install dependencies	2026-05-02T09:40:01.8233612Z [36;1mpip install nose coverage flake8 pylint[0m
+build	Install dependencies	2026-05-02T09:40:01.8260895Z shell: /usr/bin/bash -e {0}
+build	Install dependencies	2026-05-02T09:40:01.8261180Z env:
+build	Install dependencies	2026-05-02T09:40:01.8261428Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Install dependencies	2026-05-02T09:40:01.8261871Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+build	Install dependencies	2026-05-02T09:40:01.8262296Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Install dependencies	2026-05-02T09:40:01.8262660Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Install dependencies	2026-05-02T09:40:01.8263014Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Install dependencies	2026-05-02T09:40:01.8263399Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+build	Install dependencies	2026-05-02T09:40:01.8263743Z ##[endgroup]
+build	Install dependencies	2026-05-02T09:40:02.1336402Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (26.0.1)
+build	Install dependencies	2026-05-02T09:40:02.2279692Z Collecting wheel
+build	Install dependencies	2026-05-02T09:40:02.2579947Z   Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
+build	Install dependencies	2026-05-02T09:40:02.2759960Z Collecting packaging>=24.0 (from wheel)
+build	Install dependencies	2026-05-02T09:40:02.2796307Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+build	Install dependencies	2026-05-02T09:40:02.2862564Z Downloading wheel-0.47.0-py3-none-any.whl (32 kB)
+build	Install dependencies	2026-05-02T09:40:02.2942388Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+build	Install dependencies	2026-05-02T09:40:02.3273926Z Installing collected packages: packaging, wheel
+build	Install dependencies	2026-05-02T09:40:02.4147016Z 
+build	Install dependencies	2026-05-02T09:40:02.4169308Z Successfully installed packaging-26.2 wheel-0.47.0
+build	Install dependencies	2026-05-02T09:40:02.8837178Z Collecting Flask==2.3.3 (from -r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:02.9149005Z   Downloading flask-2.3.3-py3-none-any.whl.metadata (3.6 kB)
+build	Install dependencies	2026-05-02T09:40:02.9354032Z Collecting flask-cors==4.0.1 (from -r requirements.txt (line 2))
+build	Install dependencies	2026-05-02T09:40:02.9401291Z   Downloading Flask_Cors-4.0.1-py2.py3-none-any.whl.metadata (5.5 kB)
+build	Install dependencies	2026-05-02T09:40:02.9522005Z Collecting flask-talisman==1.1.0 (from -r requirements.txt (line 3))
+build	Install dependencies	2026-05-02T09:40:02.9567129Z   Downloading flask_talisman-1.1.0-py2.py3-none-any.whl.metadata (18 kB)
+build	Install dependencies	2026-05-02T09:40:02.9766465Z Collecting gunicorn==21.2.0 (from -r requirements.txt (line 4))
+build	Install dependencies	2026-05-02T09:40:02.9810423Z   Downloading gunicorn-21.2.0-py3-none-any.whl.metadata (4.1 kB)
+build	Install dependencies	2026-05-02T09:40:02.9937456Z Collecting nose==1.3.7 (from -r requirements.txt (line 5))
+build	Install dependencies	2026-05-02T09:40:02.9983348Z   Downloading nose-1.3.7-py3-none-any.whl.metadata (1.7 kB)
+build	Install dependencies	2026-05-02T09:40:03.4727518Z Collecting coverage==7.6.1 (from -r requirements.txt (line 6))
+build	Install dependencies	2026-05-02T09:40:03.4787093Z   Downloading coverage-7.6.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.3 kB)
+build	Install dependencies	2026-05-02T09:40:03.4994576Z Collecting flake8==7.1.1 (from -r requirements.txt (line 7))
+build	Install dependencies	2026-05-02T09:40:03.5041753Z   Downloading flake8-7.1.1-py2.py3-none-any.whl.metadata (3.8 kB)
+build	Install dependencies	2026-05-02T09:40:03.5560921Z Collecting pylint==3.2.7 (from -r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:03.5609826Z   Downloading pylint-3.2.7-py3-none-any.whl.metadata (12 kB)
+build	Install dependencies	2026-05-02T09:40:03.5867015Z Collecting Werkzeug>=2.3.7 (from Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:03.5911188Z   Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+build	Install dependencies	2026-05-02T09:40:03.6080922Z Collecting Jinja2>=3.1.2 (from Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:03.6124166Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+build	Install dependencies	2026-05-02T09:40:03.6245525Z Collecting itsdangerous>=2.1.2 (from Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:03.6288162Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+build	Install dependencies	2026-05-02T09:40:03.6482871Z Collecting click>=8.1.3 (from Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:03.6524228Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+build	Install dependencies	2026-05-02T09:40:03.6643019Z Collecting blinker>=1.6.2 (from Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:03.6687146Z   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+build	Install dependencies	2026-05-02T09:40:03.7008637Z Collecting importlib-metadata>=3.6.0 (from Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:03.7895976Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+build	Install dependencies	2026-05-02T09:40:03.7993874Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from gunicorn==21.2.0->-r requirements.txt (line 4)) (26.2)
+build	Install dependencies	2026-05-02T09:40:03.8086507Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==7.1.1->-r requirements.txt (line 7))
+build	Install dependencies	2026-05-02T09:40:03.8133812Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+build	Install dependencies	2026-05-02T09:40:03.8263011Z Collecting pycodestyle<2.13.0,>=2.12.0 (from flake8==7.1.1->-r requirements.txt (line 7))
+build	Install dependencies	2026-05-02T09:40:03.8308605Z   Downloading pycodestyle-2.12.1-py2.py3-none-any.whl.metadata (4.5 kB)
+build	Install dependencies	2026-05-02T09:40:03.8454320Z Collecting pyflakes<3.3.0,>=3.2.0 (from flake8==7.1.1->-r requirements.txt (line 7))
+build	Install dependencies	2026-05-02T09:40:03.8496988Z   Downloading pyflakes-3.2.0-py2.py3-none-any.whl.metadata (3.5 kB)
+build	Install dependencies	2026-05-02T09:40:03.8743265Z Collecting platformdirs>=2.2.0 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:03.8789351Z   Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+build	Install dependencies	2026-05-02T09:40:03.9154524Z Collecting astroid<=3.3.0-dev0,>=3.2.4 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:03.9206547Z   Downloading astroid-3.2.4-py3-none-any.whl.metadata (4.5 kB)
+build	Install dependencies	2026-05-02T09:40:03.9602096Z Collecting isort!=5.13.0,<6,>=4.2.5 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:03.9654079Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+build	Install dependencies	2026-05-02T09:40:03.9856334Z Collecting tomlkit>=0.10.1 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:03.9903335Z   Downloading tomlkit-0.14.0-py3-none-any.whl.metadata (2.8 kB)
+build	Install dependencies	2026-05-02T09:40:04.0101765Z Collecting typing-extensions>=3.10.0 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:04.0150560Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+build	Install dependencies	2026-05-02T09:40:04.0298226Z Collecting dill>=0.2 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:04.0342865Z   Downloading dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+build	Install dependencies	2026-05-02T09:40:04.0622532Z Collecting tomli>=1.1.0 (from pylint==3.2.7->-r requirements.txt (line 8))
+build	Install dependencies	2026-05-02T09:40:04.0675131Z   Downloading tomli-2.4.1-py3-none-any.whl.metadata (10 kB)
+build	Install dependencies	2026-05-02T09:40:04.0952678Z Collecting zipp>=3.20 (from importlib-metadata>=3.6.0->Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:04.1003859Z   Downloading zipp-3.23.1-py3-none-any.whl.metadata (3.6 kB)
+build	Install dependencies	2026-05-02T09:40:04.1656732Z Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask==2.3.3->-r requirements.txt (line 1))
+build	Install dependencies	2026-05-02T09:40:04.1708790Z   Downloading markupsafe-3.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+build	Install dependencies	2026-05-02T09:40:04.1841876Z Downloading flask-2.3.3-py3-none-any.whl (96 kB)
+build	Install dependencies	2026-05-02T09:40:04.1928923Z Downloading Flask_Cors-4.0.1-py2.py3-none-any.whl (14 kB)
+build	Install dependencies	2026-05-02T09:40:04.1997370Z Downloading flask_talisman-1.1.0-py2.py3-none-any.whl (18 kB)
+build	Install dependencies	2026-05-02T09:40:04.2062395Z Downloading gunicorn-21.2.0-py3-none-any.whl (80 kB)
+build	Install dependencies	2026-05-02T09:40:04.2129152Z Downloading nose-1.3.7-py3-none-any.whl (154 kB)
+build	Install dependencies	2026-05-02T09:40:04.2195855Z Downloading coverage-7.6.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (234 kB)
+build	Install dependencies	2026-05-02T09:40:04.2274553Z Downloading flake8-7.1.1-py2.py3-none-any.whl (57 kB)
+build	Install dependencies	2026-05-02T09:40:04.2338663Z Downloading pylint-3.2.7-py3-none-any.whl (519 kB)
+build	Install dependencies	2026-05-02T09:40:04.2425037Z Downloading astroid-3.2.4-py3-none-any.whl (276 kB)
+build	Install dependencies	2026-05-02T09:40:04.2501718Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+build	Install dependencies	2026-05-02T09:40:04.2567602Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+build	Install dependencies	2026-05-02T09:40:04.2629544Z Downloading pycodestyle-2.12.1-py2.py3-none-any.whl (31 kB)
+build	Install dependencies	2026-05-02T09:40:04.2694062Z Downloading pyflakes-3.2.0-py2.py3-none-any.whl (62 kB)
+build	Install dependencies	2026-05-02T09:40:04.2756602Z Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+build	Install dependencies	2026-05-02T09:40:04.2819593Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+build	Install dependencies	2026-05-02T09:40:04.2889042Z Downloading dill-0.4.1-py3-none-any.whl (120 kB)
+build	Install dependencies	2026-05-02T09:40:04.2955314Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+build	Install dependencies	2026-05-02T09:40:04.3020704Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+build	Install dependencies	2026-05-02T09:40:04.3084138Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+build	Install dependencies	2026-05-02T09:40:04.3152408Z Downloading markupsafe-3.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+build	Install dependencies	2026-05-02T09:40:04.3220227Z Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+build	Install dependencies	2026-05-02T09:40:04.3282379Z Downloading tomli-2.4.1-py3-none-any.whl (14 kB)
+build	Install dependencies	2026-05-02T09:40:04.3343653Z Downloading tomlkit-0.14.0-py3-none-any.whl (39 kB)
+build	Install dependencies	2026-05-02T09:40:04.3405882Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+build	Install dependencies	2026-05-02T09:40:04.3468824Z Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+build	Install dependencies	2026-05-02T09:40:04.3535713Z Downloading zipp-3.23.1-py3-none-any.whl (10 kB)
+build	Install dependencies	2026-05-02T09:40:04.4242400Z Installing collected packages: nose, flask-talisman, zipp, typing-extensions, tomlkit, tomli, pyflakes, pycodestyle, platformdirs, mccabe, MarkupSafe, itsdangerous, isort, gunicorn, dill, coverage, click, blinker, Werkzeug, Jinja2, importlib-metadata, flake8, astroid, pylint, Flask, flask-cors
+build	Install dependencies	2026-05-02T09:40:05.8264314Z 
+build	Install dependencies	2026-05-02T09:40:05.8315149Z Successfully installed Flask-2.3.3 Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.8 astroid-3.2.4 blinker-1.9.0 click-8.1.8 coverage-7.6.1 dill-0.4.1 flake8-7.1.1 flask-cors-4.0.1 flask-talisman-1.1.0 gunicorn-21.2.0 importlib-metadata-8.7.1 isort-5.13.2 itsdangerous-2.2.0 mccabe-0.7.0 nose-1.3.7 platformdirs-4.4.0 pycodestyle-2.12.1 pyflakes-3.2.0 pylint-3.2.7 tomli-2.4.1 tomlkit-0.14.0 typing-extensions-4.15.0 zipp-3.23.1
+build	Install dependencies	2026-05-02T09:40:06.2233504Z Requirement already satisfied: nose in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (1.3.7)
+build	Install dependencies	2026-05-02T09:40:06.2237912Z Requirement already satisfied: coverage in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (7.6.1)
+build	Install dependencies	2026-05-02T09:40:06.2242387Z Requirement already satisfied: flake8 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (7.1.1)
+build	Install dependencies	2026-05-02T09:40:06.2246694Z Requirement already satisfied: pylint in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (3.2.7)
+build	Install dependencies	2026-05-02T09:40:06.2273123Z Requirement already satisfied: mccabe<0.8.0,>=0.7.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from flake8) (0.7.0)
+build	Install dependencies	2026-05-02T09:40:06.2279746Z Requirement already satisfied: pycodestyle<2.13.0,>=2.12.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from flake8) (2.12.1)
+build	Install dependencies	2026-05-02T09:40:06.2285789Z Requirement already satisfied: pyflakes<3.3.0,>=3.2.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from flake8) (3.2.0)
+build	Install dependencies	2026-05-02T09:40:06.2326793Z Requirement already satisfied: platformdirs>=2.2.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (4.4.0)
+build	Install dependencies	2026-05-02T09:40:06.2333311Z Requirement already satisfied: astroid<=3.3.0-dev0,>=3.2.4 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (3.2.4)
+build	Install dependencies	2026-05-02T09:40:06.2339761Z Requirement already satisfied: isort!=5.13.0,<6,>=4.2.5 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (5.13.2)
+build	Install dependencies	2026-05-02T09:40:06.2347326Z Requirement already satisfied: tomlkit>=0.10.1 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (0.14.0)
+build	Install dependencies	2026-05-02T09:40:06.2355429Z Requirement already satisfied: typing-extensions>=3.10.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (4.15.0)
+build	Install dependencies	2026-05-02T09:40:06.2363096Z Requirement already satisfied: dill>=0.2 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (0.4.1)
+build	Install dependencies	2026-05-02T09:40:06.2370902Z Requirement already satisfied: tomli>=1.1.0 in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pylint) (2.4.1)
+build	Lint with Flake8	﻿2026-05-02T09:40:06.3107645Z ##[group]Run if [ -d service ] || [ -d tests ]; then
+build	Lint with Flake8	2026-05-02T09:40:06.3108057Z [36;1mif [ -d service ] || [ -d tests ]; then[0m
+build	Lint with Flake8	2026-05-02T09:40:06.3108361Z [36;1m  flake8 service tests[0m
+build	Lint with Flake8	2026-05-02T09:40:06.3108595Z [36;1melse[0m
+build	Lint with Flake8	2026-05-02T09:40:06.3108774Z [36;1m  flake8 .[0m
+build	Lint with Flake8	2026-05-02T09:40:06.3108966Z [36;1mfi[0m
+build	Lint with Flake8	2026-05-02T09:40:06.3130681Z shell: /usr/bin/bash -e {0}
+build	Lint with Flake8	2026-05-02T09:40:06.3130918Z env:
+build	Lint with Flake8	2026-05-02T09:40:06.3131171Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Lint with Flake8	2026-05-02T09:40:06.3131593Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+build	Lint with Flake8	2026-05-02T09:40:06.3132022Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Lint with Flake8	2026-05-02T09:40:06.3132389Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Lint with Flake8	2026-05-02T09:40:06.3132749Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Lint with Flake8	2026-05-02T09:40:06.3133111Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+build	Lint with Flake8	2026-05-02T09:40:06.3133411Z ##[endgroup]
+build	Run unit tests with nosetests	﻿2026-05-02T09:40:06.5310754Z ##[group]Run nosetests
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5311213Z [36;1mnosetests[0m
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5342915Z shell: /usr/bin/bash -e {0}
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5343307Z env:
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5343712Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5344502Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5345244Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5345869Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5346765Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5347481Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+build	Run unit tests with nosetests	2026-05-02T09:40:06.5348013Z ##[endgroup]
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9211406Z Verify service root endpoint works. ... ok
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9222998Z Verify CORS headers are added. ... ok
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9234075Z Verify security headers added by Talisman. ... ok
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9234729Z 
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9349428Z Name                  Stmts   Miss Branch BrPart  Cover   Missing
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9350170Z -----------------------------------------------------------------
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9350835Z service/__init__.py       9      0      0      0   100%
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9351443Z -----------------------------------------------------------------
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9352031Z TOTAL                     9      0      0      0   100%
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9361535Z ----------------------------------------------------------------------
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9362140Z Ran 3 tests in 0.125s
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9362283Z 
+build	Run unit tests with nosetests	2026-05-02T09:40:06.9362356Z OK
+build	Post Set up Python	﻿2026-05-02T09:40:06.9691792Z Post job cleanup.
+build	Post Checkout code	﻿2026-05-02T09:40:07.1350421Z Post job cleanup.
+build	Post Checkout code	2026-05-02T09:40:07.2339966Z [command]/usr/bin/git version
+build	Post Checkout code	2026-05-02T09:40:07.2375756Z git version 2.53.0
+build	Post Checkout code	2026-05-02T09:40:07.2421167Z Temporarily overriding HOME='/home/runner/work/_temp/7d81a7a5-0e70-444a-8b76-ad2080d35144' before making global git config changes
+build	Post Checkout code	2026-05-02T09:40:07.2422478Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Checkout code	2026-05-02T09:40:07.2427207Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/devops-capstone-project/devops-capstone-project
+build	Post Checkout code	2026-05-02T09:40:07.2462304Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Checkout code	2026-05-02T09:40:07.2493770Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Checkout code	2026-05-02T09:40:07.2740402Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Checkout code	2026-05-02T09:40:07.2761420Z http.https://github.com/.extraheader
+build	Post Checkout code	2026-05-02T09:40:07.2773903Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Checkout code	2026-05-02T09:40:07.2803368Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Checkout code	2026-05-02T09:40:07.3019203Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Checkout code	2026-05-02T09:40:07.3049623Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2026-05-02T09:40:07.3383622Z Cleaning up orphan processes
+build	Complete job	2026-05-02T09:40:07.3658456Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
