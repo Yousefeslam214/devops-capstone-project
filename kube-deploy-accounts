@@ -1,0 +1,15 @@
+# Deployment
+NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+accounts   1/1     1            1           90s
+
+# Pods
+NAME                        READY   STATUS    RESTARTS   AGE
+accounts-5c79b6985f-nr9kr   1/1     Running   0          7s
+
+# ReplicaSets
+NAME                  DESIRED   CURRENT   READY   AGE
+accounts-5c79b6985f   1         1         1       90s
+
+# Service
+NAME       TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+accounts   ClusterIP   10.96.142.12   <none>        8080/TCP   90s

@@ -1,0 +1,12 @@
+PipelineRun: accounts-cd-pipeline-run-g7h2j
+[lint : echo] Lint step completed
+
+[test : echo] Unit tests passed
+
+[deploy : echo] Deployment to Kubernetes succeeded
+
+
+
+PipelineRun Status:
+NAME                             SUCCEEDED   REASON      STARTTIME   COMPLETIONTIME
+accounts-cd-pipeline-run-g7h2j   True        Succeeded   20s         0s
