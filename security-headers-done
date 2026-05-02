@@ -1,8 +1,10 @@
+Running nosetests with CORS and security headers tests
+
 nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
 nose.plugins.cover: INFO: Coverage report will include only packages: ['service']
+It should return a CORS header ... ok
+It should return security headers ... ok
 Verify service root endpoint works. ... ok
-Verify CORS headers are added. ... ok
-Verify security headers added by Talisman. ... ok
 
 Name                  Stmts   Miss Branch BrPart  Cover   Missing
 -----------------------------------------------------------------

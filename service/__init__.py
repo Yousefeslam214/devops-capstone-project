@@ -20,9 +20,8 @@ def index():
     return (
         jsonify(
             {
-                "name": "accounts",
-                "version": "1.0.0",
-                "message": "Accounts service running",
+                "name": "Account REST API Service",
+                "version": "1.0",
             }
         ),
         200,

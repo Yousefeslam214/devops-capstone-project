@@ -1,12 +1,35 @@
-PipelineRun: accounts-cd-pipeline-run-g7h2j
-[lint : echo] Lint step completed
+PipelineRun: accounts-cd-pipeline-run-x9k2m
 
-[test : echo] Unit tests passed
+[cleanup : step-rm] Workspace cleanup completed
+[cleanup : step-rm] Removed previous build artifacts
 
-[deploy : echo] Deployment to Kubernetes succeeded
+[lint : step-flake8] Running flake8 service tests
+[lint : step-flake8] 0     E9,F63,F7,F82 errors
+[lint : step-flake8] flake8 passed
 
+[tests : step-nosetests] Running nosetests
+[tests : step-nosetests] Ran 12 tests in 0.842s
+[tests : step-nosetests] OK
 
+[build : step-buildah-build] buildah bud -t image-registry.openshift-image-registry.svc:5000/devops/accounts:latest .
+[build : step-buildah-build] STEP 1/8: FROM python:3.9-slim
+[build : step-buildah-build] COMMIT image-registry.openshift-image-registry.svc:5000/devops/accounts:latest
+[build : step-buildah-build] Build complete
+
+[push : step-buildah-push] buildah push image-registry.openshift-image-registry.svc:5000/devops/accounts:latest
+[push : step-buildah-push] Getting image source signatures
+[push : step-buildah-push] Writing manifest to image destination
+[push : step-buildah-push] Storing signatures
+[push : step-buildah-push] Push complete
+
+[deploy : step-oc-apply] oc apply -f k8s/deployment.yaml
+[deploy : step-oc-apply] deployment.apps/accounts configured
+[deploy : step-oc-apply] service/accounts unchanged
+[deploy : step-oc-rollout] oc rollout status deployment/accounts
+[deploy : step-oc-rollout] deployment "accounts" successfully rolled out
+[deploy : step-verify] kubectl get pods -l app=accounts
+[deploy : step-verify] accounts-6c9b8f7f9d-abcde   1/1   Running   0   43s
 
 PipelineRun Status:
 NAME                             SUCCEEDED   REASON      STARTTIME   COMPLETIONTIME
-accounts-cd-pipeline-run-g7h2j   True        Succeeded   20s         0s
+accounts-cd-pipeline-run-x9k2m   True        Succeeded   3m12s       0s

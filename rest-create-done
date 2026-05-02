@@ -1,11 +1,10 @@
-Command:
-curl -i -X POST http://localhost:8080/accounts \
+Endpoint: /accounts
+
+curl -i -X POST localhost:8080/accounts \
   -H "Content-Type: application/json" \
   -d '{"name":"Alice Smith","email":"alice@example.com","address":"123 Main Street","phone_number":"555-0101"}'
 
-Output:
 HTTP/1.1 201 CREATED
 Content-Type: application/json
-Content-Length: 112
 
 {"id":1,"name":"Alice Smith","email":"alice@example.com","address":"123 Main Street","phone_number":"555-0101"}
